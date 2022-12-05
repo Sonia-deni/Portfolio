@@ -10,7 +10,7 @@
 
 body{
   background-color: var(--background-color);
-  min-width: 600px;
+  min-width: 400px;
 }
 
 header{
@@ -19,11 +19,10 @@ header{
 }
  .name{
   display: inline-block;
-  width: 25%;
   color: var(--header-text);
   background-color: var(--background-color);
-  padding-left: 1rem;
- }
+  text-align: center;
+}
 
 nav {
   margin-right: 20px;
@@ -45,14 +44,6 @@ nav a{
   color: var(--header-text);
 }
 
-#profile-pic{
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 100%;
-  border: 1px solid var(--header-text);
-  margin: 30px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -67,6 +58,14 @@ body {
   background-image: url("../images/02-hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#profile-pic{
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100%;
+  border: 1px solid var(--header-text);
+  margin: 25px;
 }
 
 .hero-banner h2{
@@ -86,31 +85,30 @@ main{
 #about-title{
   grid-area: about-title;
 }
-
 #about{
   grid-area: about;
 }
-
 #work-title{
   grid-area: work-title;
 }
-
 #work{
   grid-area: work;
 }
-
 #contact-title{
   grid-area: contact-title;
 }
-
 #contact{
   grid-area: contact;
 }
 
+.content{
+  padding: 10px;
+}
+
 #work{
   display: grid;
-  grid-template-columns: 1fr fr;
-  grid-template-rows: fr fr fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
   "project-1 project-1"
   "project-2 project-3"
@@ -142,16 +140,8 @@ main{
   grid-area: project-5;
   background-image: url(../images/02-run-buddy.jpg); 
 }
-main{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 5fr 1fr;
-  grid-template-areas: 
-  "about-title about"
-  "work-title work"
-  "contact-title contact";
-}
-.work{
+
+.work-link{
   border: 2px solid var(--header-text);
   margin: 5px;
   background-position: center;
@@ -202,13 +192,12 @@ p {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   nav{
     display: none;
   }
   .name{
-    font-size: 2vw ;
+    font-size: 50% ;
   }
   .welcome{
     font-size: smaller;
@@ -238,63 +227,12 @@ p {
     }
   }
 
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 600px) and (max-width: 737px) {
+ .name{
+  font-size: 10px;
+ }
   nav{
-    display: none;
+    font-size: 15px;
   }
-  .name{
-    font-size: 2vw ;
   }
-  .welcome{
-    font-size: smaller;
-  }
-  main{
-    grid-template-rows: 0.9fr 1fr 0.3fr;
-  }
-  #work{
-    display: grid;
-    grid-template-columns: 0.9fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "project-1"
-    "project-2"
-    "project-3"
-    "project-4"
-    "project-5"
-    ;
-  }
-  .text-background{
-    width: 186px;
-  }
-  .contact{
-      flex-direction: column;
-      align-items: flex-start;
-      font-size: smaller;
-    }
-  }
-
-Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {
-
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 1px) {
-
-
-}
-
-@media only screen and (max-width: 1150px) {
-  {
-    .name{
-    
-    }
-  }
-
-  .icons{
-    margin-left: auto;
-  }
-}
-*/
