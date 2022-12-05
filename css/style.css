@@ -4,17 +4,17 @@
 
 :root{
   --header-text: #2c3e4c;
-  --background-color: #c6ac85;
+  --background-color: #e2e5cb;
   --header-color: #a2c4c6;
 }
 
 body{
-  background-color: #e2e5cb;
+  background-color: var(--background-color)
 }
 
 header{
   background-color: var(--header-color);
-  height: 60px;
+  height: 70px;
 }
 
 header h1{
@@ -70,7 +70,7 @@ body {
 }
 
 .hero-banner h2{
-  background-color: var(--background-color);
+  background-color: var(--header-color)
 }
 
 main{
@@ -120,22 +120,53 @@ main{
 
 #project-1{
   grid-area: project-1;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project-2{
   grid-area: project-2;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project-3{
   grid-area: project-3;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project-4{
   grid-area: project-4;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #project-5{
   grid-area: project-5;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work{
+  border: 2px solid var(--header-text);
+  margin: 5px;
+}
+
+.text-background{
+  position: relative;
+  left: 50px;
+  top: 100px;
+  background-color: var(--header-color);
+  width: fit-content;
+  border: 1px solid var(--header-text);
+  padding: 5px;
+  border-radius: 20%;
 }
 
 .title{
@@ -157,6 +188,16 @@ h6 {
   color: var(--header-text);
 }
 
+a{
+  text-decoration: none;
+}
+
 p {
   margin: 0;
+}
+
+.contact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
