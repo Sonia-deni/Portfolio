@@ -1,6 +1,6 @@
 # Portfolio Page - Bootcamp Week 2
 
-## A Responsive Portfolio page using CSS grid and flexbox 
+## A responsive portfolio page using CSS grid and flexbox 
 
 This page has been created as a portfolio that can be updated as I progress through the bootcamp to showcase what I have learned. It provides links to 5 projects with one being the most important and highlighted at the top of the "work" section being double the size of the others. In order to make the page responsive, CSS flexbox and grid have been used, along with media queries at specific breakpoints.
 
@@ -8,17 +8,18 @@ This page has been created as a portfolio that can be updated as I progress thro
 ## Usage
 
 Here is a mock up of the page:
-    ![screenshot of horiseon webpage](assets/images/Screenshot.png)
+    ![screenshot of portfolio page](./images/screenshot-page.png)
   
 
 ## Credits
 
-[Assignment] https://courses.bootcampspot.com/courses/3021/assignments/44723?module_item_id=832079
+[Assignment] https://courses.bootcampspot.com/courses/3021/assignments/44735?module_item_id=832140
 
-[Semantic HTML] https://www.w3schools.com/html/html5_semantic_elements.asp
+[FreeCodeCamp] https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form
 
-[Image alt attributes] https://www.w3schools.com/tags/att_img_alt.asp
- 
+[Odin Project] https://www.theodinproject.com/lessons/foundations-recipes
+
+
 ## Badges
 
 ![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
