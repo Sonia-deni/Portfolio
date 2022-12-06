@@ -101,10 +101,6 @@ main{
   grid-area: contact;
 }
 
-.content{
-  padding: 10px;
-}
-
 #work{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -139,6 +135,15 @@ main{
 #project-5{
   grid-area: project-5;
   background-image: url(../images/02-run-buddy.jpg); 
+}
+
+.about, .content{
+  padding: 10px;
+}
+
+.content :hover {
+  background-color: var(--background-color);
+  
 }
 
 .work-link{
